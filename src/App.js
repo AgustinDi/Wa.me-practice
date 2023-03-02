@@ -1,22 +1,25 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import NumberPicker from './Component/NumberPicker.jsx';
+require('dotenv').config()
+
 
 function App() {
+  const [text, setText] = useState('Texto');
+  const [number, setNumber] = useState(0);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Wa.me</h1>
+        <div>
+          Texto a enviar: <input type='text' onChange={x=>setText(x.target.value)}/>
+        </div>
+        <div>
+          Numero de productos: <NumberPicker number={setNumber}/>
+        </div>
+        <h4>Mensaje:</h4>
+        <p>{text} - {number} - {process.env.REACT_APP_CELLPHONE}</p>
       </header>
     </div>
   );
