@@ -7,6 +7,8 @@ require('dotenv').config()
 function App() {
   const [text, setText] = useState('Texto');
   const [number, setNumber] = useState(0);
+  let message = `${text} ${number}`
+  let url = `https://wa.me/${process.env.REACT_APP_CELLPHONE}?text=${encodeURI(message)}`
 
   return (
     <div className="App">
@@ -19,7 +21,10 @@ function App() {
           Numero de productos: <NumberPicker set={setNumber}/>
         </div>
         <h4>Mensaje:</h4>
-        <p>{text} - {number} - {process.env.REACT_APP_CELLPHONE}</p>
+        <p>{message}</p>
+        <a href={url}>
+          <button>Enviar mensaje</button>
+        </a>
       </header>
     </div>
   );
