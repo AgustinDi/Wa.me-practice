@@ -16,7 +16,7 @@ function App() {
           Texto a enviar: <input type='text' onChange={x=>setText(x.target.value)}/>
         </div>
         <div>
-          Numero de productos: <NumberPicker number={setNumber}/>
+          Numero de productos: <NumberPicker set={setNumber}/>
         </div>
         <h4>Mensaje:</h4>
         <p>{text} - {number} - {process.env.REACT_APP_CELLPHONE}</p>

@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-export default function NumberPicker(){
+export default function NumberPicker({set}){
     const [number, setNumber] = useState(0);
+
+    useEffect(()=>{
+        set(number)
+    }, [number,set])
+
     return (
         <div id="NumberPicker">
         <input type='button' value='+' onClick={()=>setNumber(number+1)}/>
