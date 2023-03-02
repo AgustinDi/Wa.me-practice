@@ -8,10 +8,10 @@ export default function NumberPicker({set}){
     }, [number,set])
 
     return (
-        <div id="NumberPicker">
-        <input type='button' value='+' onClick={()=>setNumber(number+1)}/>
-            {number}
+        <div className="NumberPicker">
         <input type='button' value='-' onClick={()=>setNumber(number !== 0 ? number-1 : 0)}/>
+            {number}
+        <input type='button' value='+' onClick={()=>setNumber(number+1)}/>
         </div>
     )
 }

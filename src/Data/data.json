@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "img":"https://res.cloudinary.com/agustindi/image/upload/v1677774550/Toque%20de%20Belleza/IMG-20230301-WA0045_zym1z1.jpg",
+            "title":"bonet",
+            "id":1,
+            "size":"250ml"
+        },
+        {
+            "img":"https://res.cloudinary.com/agustindi/image/upload/v1677774559/Toque%20de%20Belleza/IMG-20230301-WA0040_xkvyh2.jpg",
+            "title":"leinen",
+            "id":2,
+            "size":"250ml"
+        },
+        {
+            "img":"https://res.cloudinary.com/agustindi/image/upload/v1677774557/Toque%20de%20Belleza/IMG-20230301-WA0032_x55tzx.jpg",
+            "title":"argan",
+            "id":3,
+            "size":"250ml"
+        }
+    ]
+}

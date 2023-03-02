@@ -1,3 +1,4 @@
+/* boilerplate */
 .App {
   text-align: center;
 }
@@ -14,12 +15,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #191a1d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -37,10 +37,37 @@
   }
 }
 
-#NumberPicker {
+h1 {
+  margin-top: 10px;
+}
+
+/* number picker */
+
+.NumberPicker {
   display: inline;
 }
 
-#NumberPicker input:hover {
+.NumberPicker input:hover {
   cursor: pointer;
+}
+
+/* card */
+
+.img {
+  width: 100px;
+}
+
+.card {
+  margin: 30px;
+}
+
+.title {
+  margin: 0;
+}
+
+
+/* Cards */
+
+#cards {
+  display: flex;
 }
