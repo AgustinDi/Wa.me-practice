@@ -9,9 +9,9 @@ export default function NumberPicker({set}){
 
     return (
         <div className="NumberPicker">
-        <input type='button' value='-' onClick={()=>setNumber(number !== 0 ? number-1 : 0)}/>
-            {number}
-        <input type='button' value='+' onClick={()=>setNumber(number+1)}/>
+        <input type='button' value='-' className="negativeButton" onClick={()=>setNumber(number !== 0 ? number-1 : 0)}/>
+            <span>{number}</span>
+        <input type='button' value='+' className="positiveButton" onClick={()=>setNumber(number+1)}/>
         </div>
     )
 }
