@@ -78,8 +78,27 @@ h1 {
   display: flex;
 }
 
+#enviarMensaje {
+  border: 1px;
+  border-radius: 6px;
+  background-color: #007a00;
+  font-size: medium;
+  padding: 12px;
+  color: rgb(211, 210, 210)
+}
 
+#enviarMensaje:hover {
+  cursor: pointer;
+}
 
+#gitImage {
+  width: 80px;
+  margin: 20px;
+}
+
+#gitImage:hover {
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 600px){
   #cards {

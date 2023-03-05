@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Cards from './Component/Cards';
-import {data} from './Data/data.json'
+import {data} from './Data/data.json';
+import git from './github.png';
 require('dotenv').config()
 
 
@@ -22,7 +23,10 @@ function App() {
         *recomendado usar en el celular
         <Cards arr={data} set={setPedido}></Cards>
         <a href={url}>
-          <button>Enviar mensaje</button>
+          <button id='enviarMensaje'>Hacer el pedido</button>
+        </a>
+        <a href='https://github.com/AgustinDi/wa.me-practice'>
+          <img src={git} id='gitImage'></img>
         </a>
       </header>
     </div>
