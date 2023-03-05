@@ -20,7 +20,7 @@ h1 {
 /* number picker */
 
 .NumberPicker {
-  display: inline;
+  margin: 10px;
 }
 
 .NumberPicker input:hover {
@@ -51,6 +51,8 @@ h1 {
 
 .img {
   width: 100px;
+  border: 2px solid white;
+  border-radius: 1px;
 }
 
 .card {
@@ -60,8 +62,13 @@ h1 {
   margin: 30px;
 }
 
+.card img {
+  margin: 10px;
+}
+
 .title {
-  margin: 0;
+  margin: 0px 10px 10px 10px;
+  font-size: x-large;
 }
 
 
@@ -69,4 +76,14 @@ h1 {
 
 #cards {
   display: flex;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+  #cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

@@ -9,7 +9,7 @@ function App() {
   const [pedido, setPedido] = useState({})
   let inicio = Object.values(pedido).some(item => item !== null) ? `Hola Cande! Me gustaria hacerte un pedido:\r\n` : `Hola Cande! tengo una consulta:`
   let pedidoFinal = Object.values(pedido).join('');
-  let url = `https://wa.me/${process.env.REACT_APP_CELLPHONE}?text=${encodeURI(inicio+pedidoFinal.substring(0,pedidoFinal.length - 4))}`
+  let url = `https://wa.me/${process.env.REACT_APP_CELLPHONE}?text=${encodeURI(inicio+pedidoFinal.substring(0,pedidoFinal.length - 2))}`
 
   useEffect(()=>{
     
